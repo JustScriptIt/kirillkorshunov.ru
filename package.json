@@ -1,0 +1,25 @@
+{
+  "name": "kirillkorshunov.ru",
+  "version": "1.0.0",
+  "description": "Сайт-портфолио Коршунова Кирилла",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kir2410/kirillkorshunov.ru.git"
+  },
+  "author": "Коршунов Кирилл",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kir2410/kirillkorshunov.ru/issues"
+  },
+  "homepage": "https://github.com/Kir2410/kirillkorshunov.ru#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
