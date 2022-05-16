@@ -1,0 +1,35 @@
+header
+    position: fixed
+    height: 7vh
+    top: 0
+    right: 0
+    left: 0
+    padding: 1vw 3vw
+    background: #FFFFFF
+    z-index: 10
+
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: 1s
+    transition-timing-function: cubic-bezier(1.1,1.9,.9,.1)
+    &-logo
+        font-family: 'Russo One', sans-serif
+        font-weight: 400
+        font-size: 1.3vw
+        text-decoration: none
+        text-transform: uppercase
+        color: $text-color
+    &-language
+        font-family: 'Russo One', sans-serif
+        font-weight: 400
+        font-size: .9vw
+        text-transform: uppercase
+        z-index: 200
+        &__ru
+            text-decoration: none
+            color: $text-color
+        &__eng
+            text-decoration: none
+            color: $text-color

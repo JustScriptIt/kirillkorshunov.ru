@@ -1,0 +1,41 @@
+aside
+    position: fixed
+    height: 100vh
+    width: 3vw
+    background: #FFFFFF
+
+.sidebar
+    &__left
+        top: 0
+        left: 0
+    &__right
+        top: 0
+        right: 0
+
+.social
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    transform: translateY(-50%)
+    top: 50vh
+    height: 15vh
+    &-wraper
+        position: fixed
+        top: 0
+        right: 0
+        height: 100%
+        width: 3vw
+        display: flex
+        align-items: center
+        justify-content: center
+        background: white
+    &-item
+        width: 18px
+        height: 18px
+        list-style-type: none
+
+.item-image
+    width: 100%
+    height: 100%
