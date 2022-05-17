@@ -2,7 +2,6 @@ const menu = () => {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menu");
   const header = document.querySelector("header");
-  const navbar = document.querySelector("nav");
   const footer = document.querySelector("footer");
   const sidebarLeft = document.querySelector(".sidebar__left");
   const sidebarRight = document.querySelector(".sidebar__right");
