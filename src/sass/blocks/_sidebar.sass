@@ -5,12 +5,18 @@ aside
     background: #FFFFFF
 
 .sidebar
+    z-index: 9
+    transition: .5s
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
     &__left
         top: 0
         left: 0
     &__right
         top: 0
         right: 0
+        display: flex
+        align-items: center
+        justify-content: center
 
 .social
     position: absolute
@@ -22,9 +28,6 @@ aside
     top: 50vh
     height: 15vh
     &-wraper
-        position: fixed
-        top: 0
-        right: 0
         height: 100%
         width: 3vw
         display: flex

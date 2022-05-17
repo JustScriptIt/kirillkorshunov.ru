@@ -1,25 +1,32 @@
 header
     position: fixed
+    display: flex
+    align-items: center
     height: 7vh
     top: 0
     right: 0
     left: 0
-    padding: 1vw 3vw
+    padding: 2vh 3vw
     background: #FFFFFF
     z-index: 10
+    transition: .5s
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
 
 .navbar
     display: flex
     align-items: center
     justify-content: space-between
+    height: 3vh
+    width: 94vw
     transition: 1s
     transition-timing-function: cubic-bezier(1.1,1.9,.9,.1)
     &-logo
         font-family: 'Russo One', sans-serif
         font-weight: 400
-        font-size: 1.3vw
+        font-size: 1.1vw
         text-decoration: none
         text-transform: uppercase
+        letter-spacing: 0.2em
         color: $text-color
     &-language
         font-family: 'Russo One', sans-serif

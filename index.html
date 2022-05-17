@@ -17,21 +17,62 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="" class="navbar-logo">Коршунов</a>
+        <a href="" class="navbar-logo">Коршунов *</a>
         <div class="navbar-language">
           <a href="" class="navbar-language__ru">ru.</a>
           <a href="" class="navbar-language__eng">eng.</a>
         </div>
       </nav>
     </header>
-    <aside class="sidebar__left">
+    <aside class="sidebar sidebar__left">
       <button class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
+      <menu class="menu">
+        <div class="menu-left">
+          <div class="menu-items">
+            <span class="menu-item is-active">Обо мне.</span>
+            <span class="menu-item">Мои работы.</span>
+            <span class="menu-item">Обратная связь.</span>
+            <span class="menu-item">Полезные статьи.</span>
+          </div>
+          <!-- /.menu-items -->
+          <div class="menu-contacts">
+            <div class="menu-contacts__wraper">
+              <span class="menu-adress">г.Томск</span>
+            </div>
+            <div class="menu-contacts__wraper">
+              <span class="menu-phone">+7 952 880 59 29</span>
+            </div>
+            <div class="menu-contacts__wraper">
+              <span class="menu-email">kkv2410@gmail.com</span>
+            </div>
+          </div>
+          <!-- /.menu-contacts -->
+          <div class="menu-interactive">
+            <div class="menu-interactive__left">
+              <span class="menu-question">Заинтересовали мои навыки?</span>
+              <a href="" class="menu-feedback">Напишите мне.</a>
+              <img src="/src/images/menu-arrow.svg" alt="" class="menu-arrow" />
+            </div>
+            <!-- /.menu-interactive__left -->
+            <div class="menu-interactive__right">
+              <span class="menu-question">Понравились мои работы?</span>
+              <a href="" class="menu-feedback">Рассылка.</a>
+            </div>
+            <!-- /.menu-interactive__right -->
+          </div>
+          <!-- /.menu-interactive -->
+        </div>
+        <!-- /.menu-left -->
+        <div class="menu-right"></div>
+        <!-- /.menu-right -->
+      </menu>
+      <!-- /.menu -->
     </aside>
-    <aside class="sidebar__right">
+    <aside class="sidebar sidebar__right">
       <div class="social-wraper">
         <ul class="social">
           <li class="social-item">
@@ -55,7 +96,7 @@
       </div>
     </aside>
     <main>
-      <section></section>
+      <section class="welcome"></section>
     </main>
     <footer></footer>
   </body>

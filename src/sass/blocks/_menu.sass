@@ -1,76 +1,122 @@
-//Нужно упростить некоторые стили
-.hamburger
-    display: inline-block
-    cursor: pointer
-    transition-property: opacity, filter
-    transition-duration: 0.15s
-    transition-timing-function: linear
-    font: inherit
-    color: inherit
-    text-transform: none
-    background-color: transparent
-    border: 0
-    margin: 0
-    overflow: visible
-    z-index: 101
+menu
     position: absolute
-    left: 3vw
-    top: 50%
-    transform: translate(-50%, -50%)
-    transition: 0.5s //время, за которое выполнится анимация
-    transition-timing-function: ease-in
-    right: initial //возвращает стандартный отступ справа
-    &:hover
-        opacity: 0.7
-    &.is-active:hover
-        opacity: 0.7
-    &.is-active .hamburger-inner, &.is-active .hamburger-inner::before, &.is-active .hamburger-inner::after
-        background-color: #292d2d
-    &-box
-        width: 20px
-        height: 20px
-        display: inline-block
-        position: relative
-    &-inner
-        display: block
-        top: 50%
-        margin-top: -2px
-    &-inner, &-inner::before, &-inner::after
-        width: 20px
-        height: 2px
-        background-color: #292d2d
-        border-radius: 2px
+    display: flex
+    align-items: center
+    top: 0
+    left: 100%
+    height: 100vh
+    width: 0
+    z-index: -1
+    transition: .5s
+    transition-timing-function: cubic-bezier(1, 0, 0, 1)
+    overflow: hidden
+
+.menu
+    &-left
+        background: white
+        width: 75%
+        height: 100%
+    &-right
+        background: gold
+        width: 25%
+        height: 100%
+        opacity: 0.85
+    &-items
         position: absolute
-        transition-property: transform
-        transition-duration: 0.15s
-        transition-timing-function: ease
-    &-inner::before, &-inner::after
-        content: ""
-        display: block
-    &-inner::before
-        top: -7px
-    &-inner::after
-        bottom: -10px
-    &--collapse .hamburger-inner
-        top: auto
-        bottom: 0
-        transition-duration: 0.13s
-        transition-delay: 0.13s
-        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
-    &--collapse .hamburger-inner::after
-        top: -14px
-        transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear
-    &--collapse .hamburger-inner::before
-        transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
-    &--collapse.is-active .hamburger-inner
-        transform: translate3d(0, -7px, 0) rotate(-45deg)
-        transition-delay: 0.22s
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
-    &--collapse.is-active .hamburger-inner::after
-        top: 0
-        opacity: 0
-        transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear
-    &--collapse.is-active .hamburger-inner::before
-        top: 0
-        transform: rotate(-90deg)
-        transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+        display: flex
+        align-items: start
+        justify-content: start
+        flex-direction: column
+        top: 20vh
+        left: 10vw
+        width: 40vw
+        height: 30%
+    &-item
+        position: relative
+        font-size: 36px
+        font-weight: 700
+        margin-bottom: 1vh
+        z-index: 10
+        &:hover
+            cursor: pointer
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            left: -5%
+            top: 30%
+            width: 0
+            height: 40%
+            background: rgba(244, 214, 68, 0.85)
+            z-index: -1
+            transition: 0.2s //время, за которое выполнится анимация
+        &:hover:before
+            width: 110%
+        &.is-active:before
+            width: 110%
+    &-contacts
+        position: absolute
+        display: flex
+        align-items: start
+        justify-content: start
+        flex-direction: column
+        top: 65vh
+        left: 10vw
+        width: 40vw
+        height: 30%
+        font-family: 'Montserrat'
+        font-style: italic
+        font-weight: 300
+        font-size: 14px
+        line-height: 105%
+        letter-spacing: 0.01em
+    &-phone
+        font-style: normal
+        font-weight: 900
+    &-email
+        font-style: normal
+        font-weight: 900
+    &-interactive
+        position: absolute
+        display: flex
+        align-items: start
+        justify-content: start
+        top: 80vh
+        left: 10vw
+        width: 60vw
+        height: 30%
+        &__left
+            display: flex
+            align-items: start
+            justify-content: start
+            flex-direction: column
+            width: 60%
+        &__right
+            display: flex
+            align-items: start
+            justify-content: start
+            flex-direction: column
+            width: 40%
+    &-question
+        font-family: 'Montserrat'
+        font-style: italic
+        font-weight: 300
+        font-size: 12px
+        line-height: 105%
+        letter-spacing: -0.06em
+    &-feedback
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 22px
+        font-weight: 900
+        color: black
+        &:hover + .menu-arrow
+            left: -5vw
+    &-arrow
+        position: absolute
+        top: 2vh
+        left: -10vw
+        z-index: 20
+        width: 4vw
+        height: 4vh
+        transition: .5s
