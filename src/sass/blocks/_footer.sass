@@ -7,5 +7,35 @@ footer
     left: 0
     background: #FFFFFF
     z-index: 10
-    transition: .5s
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
+    transition: .3s
+    // transition-timing-function: cubic-bezier(1, 0, 0, 1)
+
+.footer
+    overflow: hidden
+    &_visible
+        height: 16vh
+    &__wrapper
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: space-between
+        top: 50%
+        transform: translateY(-50%)
+        transition: .1s
+        width: 71vw
+        height: 0%
+        left: 18vw
+        overflow: hidden
+        &-item
+            display: flex
+            align-items: start
+            justify-content: space-between
+            flex-direction: column
+            overflow: hidden
+            &_right
+                align-items: end
+                color: $second-color
+                font-size: 1.7vh
+.logo
+    width: 1.7vw
+    margin-bottom: 1vh

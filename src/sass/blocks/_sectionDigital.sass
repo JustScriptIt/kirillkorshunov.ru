@@ -1,0 +1,112 @@
+.digital
+    height: 100vh
+    position: relative
+    &__title
+        display: flex
+        align-items: start
+        justify-content: end
+        flex-direction: column
+        position: absolute
+        top: 10vh
+        left: 10vw
+        width: 44vw
+        color: $accent-color
+        font-family: 'Gilroy-Black'
+        line-height: 4vh
+        letter-spacing: 0em
+        font-size: 6.65vh
+        text-transform: uppercase
+        z-index: 1
+        &-line
+            margin-bottom: 3vh
+            width: 7vh
+            &_qualities
+                stroke-width: 1.2vh
+                stroke: $accent-color
+        &-point
+            line-height: 8vh
+            letter-spacing: -0.07em
+            font-size: 10vh
+    &__subtitle
+        position: absolute
+        top: 40vh
+        left: 10vw
+        transform: translateY(-50%)
+        width: 35vw
+        color: black
+        font-family: 'Gilroy-Bold'
+        line-height: 3.2vh
+        letter-spacing: 0.07em
+        font-size: 3.4vh
+        text-transform: uppercase
+        z-index: 1
+        &_italic
+            font-family: 'Rabbits-Junior'
+            font-weight: normal
+        &_point
+            line-height: 3vh
+            letter-spacing: -0.07em
+            font-size: 6vh
+            color: $accent-color
+    &__description
+        position: absolute
+        top: 55vh
+        left: 10vw
+        width: 32vw
+        color: $text-color
+        font-family: 'Lato-Bold'
+        line-height: 2.8vh
+        font-size: 2.1vh
+        text-transform: uppercase
+        z-index: 1
+    &__question
+        position: absolute
+        top: 88vh
+        left: 10vw
+        width: 32vw
+        color: $second-color
+        font-family: 'Lato-Medium'
+        font-style: italic
+        line-height: 1.8vh
+        font-size: 1.95vh
+        z-index: 1
+    &__opportunity
+        position: absolute
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        top: 20vh
+        right: 4vw
+        width: 41vw
+        height: 64.8vh
+        background: #292D2D
+        &-block
+            display: flex
+            align-items: start
+            justify-content: space-between
+            flex-direction: column
+            padding: 10% 15%
+            height: 90%
+            width: 100%
+            // border: 1px solid white
+        &-title
+            height: 15%
+            text-transform: uppercase
+            font-size: 2.5vh
+            font-family: 'GolosText'
+            font-weight: normal
+            color: white
+        &-items
+            display: flex
+            align-items: start
+            justify-content: space-between
+            flex-direction: column
+            height: 70%
+        &-item
+            list-style: none
+            text-transform: uppercase
+            font-size: 1.7vh
+            font-family: 'GolosText'
+            font-weight: normal
+            font-style: italic
+            color: grey

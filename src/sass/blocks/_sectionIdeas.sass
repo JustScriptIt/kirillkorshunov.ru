@@ -1,0 +1,73 @@
+.ideas
+    height: 101vh
+    position: relative
+    background: ivory
+    &__title
+        display: flex !important
+        align-items: start
+        justify-content: end
+        flex-direction: column
+        position: absolute
+        top: 10vh
+        left: 10vw
+        width: 44vw
+        color: $text-color
+        font-family: 'GolosText'
+        font-weight: black
+        line-height: 4vh
+        letter-spacing: 0em
+        font-size: 6.65vh
+        text-transform: uppercase
+        z-index: 1
+        &-line
+            margin-bottom: 3vh
+            width: 7vh
+        &-text
+            &_accent
+                color: $accent-color
+        &-point
+            line-height: 8vh
+            letter-spacing: -0.07em
+            font-size: 10vh
+            color: $accent-color
+    &__image
+        position: absolute
+        top: 25vh
+        height: 35vh
+        width: 100%
+        z-index: 0
+        filter: grayscale(1) //делает изображение черно-белым
+        background-image: url('../images/bg1.jpg')
+        background-attachment: fixed
+        background-size: cover
+        background-position: 0 5vh
+        background-repeat: none
+    &__description
+        position: absolute
+        display: flex
+        align-items: start
+        justify-content: space-between
+        top: 65vh
+        left: 20vw
+        width: 75vw
+        height: auto
+        &-title
+            width: 25%
+            color: $text-color
+            font-family: 'GolosText'
+            font-weight: bold
+            line-height: 3.2vh
+            font-size: 3.4vh
+            text-transform: uppercase
+            z-index: 1
+        &-text
+            width: 35%
+            color: $text-color
+            font-family: 'GolosText'
+            font-weight: bold
+            line-height: 2.8vh
+            font-size: 2.4vh
+            text-transform: uppercase
+            z-index: 1
+            &_accent
+                background: $accent-color

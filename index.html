@@ -17,10 +17,10 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="" class="navbar-logo">Коршунов *</a>
-        <div class="navbar-language">
-          <a href="" class="navbar-language__ru">ru.</a>
-          <a href="" class="navbar-language__eng">eng.</a>
+        <a href="" class="navbar__logo">Коршунов *</a>
+        <div class="navbar__language">
+          <a href="" class="navbar__language_ru">ru.</a>
+          <a href="" class="navbar__language_eng">eng.</a>
         </div>
       </nav>
     </header>
@@ -54,13 +54,25 @@
           <div class="menu-interactive">
             <div class="menu-interactive__left">
               <span class="menu-question">Заинтересовали мои навыки?</span>
-              <a href="" class="menu-feedback">Напишите мне.</a>
-              <img src="/src/images/menu-arrow.svg" alt="" class="menu-arrow" />
+              <a href="/404.html" class="menu-feedback">Напишите мне.</a>
+              <svg
+                class="menu-arrow"
+                width="73"
+                height="23"
+                viewBox="0 0 73 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M72.0435 12.8868C72.6361 12.3079 72.6471 11.3582 72.0682 10.7656L62.6339 1.10935C62.0549 0.516796 61.1053 0.505753 60.5127 1.08469C59.9202 1.66363 59.9091 2.61331 60.488 3.20587L68.8741 11.7892L60.2907 20.1753C59.6982 20.7542 59.6871 21.7039 60.2661 22.2965C60.845 22.889 61.7947 22.9001 62.3872 22.3211L72.0435 12.8868ZM0.982559 12.4999L70.9778 13.3138L71.0127 10.314L1.01744 9.5001L0.982559 12.4999Z"
+                  fill="black"
+                />
+              </svg>
             </div>
             <!-- /.menu-interactive__left -->
             <div class="menu-interactive__right">
               <span class="menu-question">Понравились мои работы?</span>
-              <a href="" class="menu-feedback">Рассылка.</a>
+              <a href="/404.html" class="menu-feedback">Рассылка.</a>
             </div>
             <!-- /.menu-interactive__right -->
           </div>
@@ -96,8 +108,208 @@
       </div>
     </aside>
     <main>
-      <section class="welcome"></section>
+      <section class="welcome">
+        <figure class="welcome-background">
+          <div class="title-wrapper">
+            <h2 class="welcome-title">
+              При<br />вет <span class="welcome-title__point">.</span>
+            </h2>
+          </div>
+          <div class="title-wrapper__small">
+            <h3 class="welcome-title__small">
+              <div class="welcome-title__small-head">
+                <svg
+                  class="title-line"
+                  width="50"
+                  height="14"
+                  viewBox="0 0 64 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="title-line__qualities"
+                    d="M2 3L12 13L22 3L32 13L42 3L52 13L62 3"
+                    stroke="black"
+                  />
+                </svg>
+                с ноября 2020 года
+              </div>
+              Я - начинающий frontend-разработчик,
+              <span class="welcome-title__small welcome-title__small-white">
+                пробующий себя в веб-дизайне <br />и сопровождении проектов
+              </span>
+            </h3>
+          </div>
+        </figure>
+        <article class="description"></article>
+      </section>
+      <section class="paralax"></section>
+      <section class="digital">
+        <h2 class="digital__title">
+          <svg
+            class="digital__title-line"
+            width="50"
+            height="14"
+            viewBox="0 0 64 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="digital__title-line_qualities"
+              d="M2 3L12 13L22 3L32 13L42 3L52 13L62 3"
+            />
+          </svg>
+          <span class="digital__title-text"
+            >Цифровая <br />стратегия
+            <span class="digital__title-point">.</span></span
+          >
+        </h2>
+        <h3 class="digital__subtitle">
+          Разработка
+          <span class="digital__subtitle_italic"
+            >вашей <br />
+            цифровой
+          </span>
+          стратегии
+          <span class="digital__subtitle_point">.</span>
+        </h3>
+        <div class="digital__description">
+          Обзор вашего цифрового стратегия. Ключевой компонент вашей
+          трансформации, ваша цифровая стратегия требует особого внимания. Мы
+          предоставляем вам необходимую поддержку на протяжении всего проекта.
+          Благодаря регулярным семинарам, мозговым штурмам и обмену идеями мы
+          помогаем превратить вашу первоначальную идею в передовое цифровое
+          решение.
+        </div>
+        <a href="/404.html" class="digital__question"
+          >Понравились мои работы?</a
+        >
+        <figure class="digital__opportunity">
+          <div class="digital__opportunity-block">
+            <h4 class="digital__opportunity-title">Дизайн</h4>
+            <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Прототипирование</li>
+              <li class="digital__opportunity-item">Создание макета</li>
+              <li class="digital__opportunity-item">Макеты для адаптива</li>
+              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+            </ul>
+          </div>
+          <div class="digital__opportunity-block">
+            <h4 class="digital__opportunity-title">Дизайн</h4>
+            <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Прототипирование</li>
+              <li class="digital__opportunity-item">Создание макета</li>
+              <li class="digital__opportunity-item">Макеты для адаптива</li>
+              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+            </ul>
+          </div>
+          <div class="digital__opportunity-block">
+            <h4 class="digital__opportunity-title">Дизайн</h4>
+            <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Прототипирование</li>
+              <li class="digital__opportunity-item">Создание макета</li>
+              <li class="digital__opportunity-item">Макеты для адаптива</li>
+              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+            </ul>
+          </div>
+          <div class="digital__opportunity-block">
+            <h4 class="digital__opportunity-title">Дизайн</h4>
+            <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Прототипирование</li>
+              <li class="digital__opportunity-item">Создание макета</li>
+              <li class="digital__opportunity-item">Макеты для адаптива</li>
+              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+            </ul>
+          </div>
+        </figure>
+      </section>
+      <section class="ideas">
+        <h2 class="ideas__title">
+          <svg
+            class="ideas__title-line"
+            width="50"
+            height="14"
+            viewBox="0 0 64 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="title-line__qualities"
+              d="M2 3L12 13L22 3L32 13L42 3L52 13L62 3"
+              stroke="black"
+              stroke-width="4"
+            />
+          </svg>
+          <span class="ideas__title-text"
+            >От идеи <br /><span class="ideas__title-text_accent"
+              >к продукту</span
+            >
+            <span class="ideas__title-point">.</span></span
+          >
+        </h2>
+        <div class="ideas__image"></div>
+        <article class="ideas__description">
+          <h4 class="ideas__description-title">У вас есть идеи?</h4>
+          <p class="ideas__description-text">
+            Думаете о новом лендинге для своей организации, нужна платформа для
+            интернет-магазина или ? Давайте
+            <span class="ideas__description-text_accent">
+              реализуем ваши идеи вместе.</span
+            >
+          </p>
+          <p class="ideas__description-text">
+            Мы здесь для того, чтобы воплотить ваши мечты в реальность. Наш
+            метод поддержки превратит вашу яркую идею в реальный прототип,
+            который поможет вашему бизнесу стать более прибыльным.
+          </p>
+        </article>
+      </section>
+      <button class="scroll-down">
+        <!-- Добавить стрелку -->
+      </button>
+      <button class="scroll-up">
+        <!-- Добавить стрелку -->
+      </button>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__wrapper-item footer__wrapper-item_left">
+          <span class="menu-question">Заинтересовали мои навыки?</span>
+          <a href="/404.html" class="menu-feedback">Напишите мне.</a>
+          <svg
+            class="menu-arrow"
+            width="73"
+            height="23"
+            viewBox="0 0 73 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M72.0435 12.8868C72.6361 12.3079 72.6471 11.3582 72.0682 10.7656L62.6339 1.10935C62.0549 0.516796 61.1053 0.505753 60.5127 1.08469C59.9202 1.66363 59.9091 2.61331 60.488 3.20587L68.8741 11.7892L60.2907 20.1753C59.6982 20.7542 59.6871 21.7039 60.2661 22.2965C60.845 22.889 61.7947 22.9001 62.3872 22.3211L72.0435 12.8868ZM0.982559 12.4999L70.9778 13.3138L71.0127 10.314L1.01744 9.5001L0.982559 12.4999Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <!-- /.footer__wrapper-item_left -->
+        <div class="footer__wrapper-item footer__wrapper-item_center">
+          <span class="menu-question">Понравились мои работы?</span>
+          <a href="/404.html" class="menu-feedback">Рассылка.</a>
+        </div>
+        <!-- /.footer__wrapper-item_center -->
+        <div class="footer__wrapper-item footer__wrapper-item_center-second">
+          <span>г.Томск</span>
+          <span>+7 952 880 59 29</span>
+          <span>kkv2410@gmail.com</span>
+        </div>
+        <!-- /.footer__wrapper-item_center-second -->
+        <div class="footer__wrapper-item footer__wrapper-item_right">
+          <img class="logo" src="/src/images/my-logo.png" alt="" />
+          <span>Ⓒ Коршунов Кирилл</span>
+          <span>2020 - 2022</span>
+        </div>
+        <!-- /.footer__wrapper-right -->
+      </div>
+      <!-- /.footer__wrapper -->
+    </footer>
   </body>
 </html>
