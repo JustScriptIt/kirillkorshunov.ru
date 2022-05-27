@@ -6,7 +6,6 @@ menu
     left: 100%
     height: 100vh
     width: 0
-    z-index: -1
     transition: .5s
     transition-timing-function: cubic-bezier(1, 0, 0, 1)
     overflow: hidden
@@ -17,7 +16,7 @@ menu
         width: 75%
         height: 100%
     &-right
-        background: #F4D644
+        background: $accent-color
         width: 25%
         height: 100%
         opacity: 0.85
@@ -49,7 +48,8 @@ menu
             top: 30%
             width: 0
             height: 40%
-            background: rgba(244, 214, 68, 0.85)
+            background: $accent-color
+            opacity: 0.85
             z-index: -1
             transition: 0.2s //время, за которое выполнится анимация
         &:hover:before
@@ -112,7 +112,7 @@ menu
         font-size: 22px
         font-family: 'GolosText'
         font-weight: bold
-        color: black
+        color: $text-color
         &:hover + .menu-arrow
             left: -5vw
     &-arrow

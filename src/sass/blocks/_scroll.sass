@@ -1,0 +1,51 @@
+.scroll
+    &-down
+        position: absolute
+        left: 5vw
+        top: 10vh
+        transform: translateX(-50%) translateY(-50%) rotate(270deg)
+        border: none
+        background: none
+        color: black
+        font-family: 'Lato-Regular'
+        font-size: 2vh
+        opacity: 0
+        transition: .8s
+        &_center
+            position: absolute
+            left: 48vw
+            top: -11vh
+            transform: translateX(-50%) translateY(-50%) rotate(270deg)
+            border: none
+            background: none
+            color: white
+            font-family: 'Lato-Regular'
+            font-size: 2vh
+            opacity: 1
+            transition: .8s
+        &__arrow
+            position: absolute
+            text-align: center
+            left: -1vh
+            top: -7.3vh
+            transform: rotate(270deg)
+    &-up
+        position: absolute
+        text-align: left
+        left: 95vw
+        top: 10vh
+        transform: translateX(-50%) translateY(-50%) rotate(270deg)
+        border: none
+        background: none
+        color: black
+        font-family: 'Lato-Regular'
+        font-size: 2vh
+        cursor: pointer
+        opacity: 0
+        transition: .8s
+        &__arrow
+            position: absolute
+            text-align: center
+            left: 5vh
+            top: -7.5vh
+            transform: rotate(90deg)

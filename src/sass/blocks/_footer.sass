@@ -7,11 +7,9 @@ footer
     left: 0
     background: #FFFFFF
     z-index: 10
-    transition: .3s
-    // transition-timing-function: cubic-bezier(1, 0, 0, 1)
+    transition: .2s
 
 .footer
-    overflow: hidden
     &_visible
         height: 16vh
     &__wrapper
@@ -22,20 +20,48 @@ footer
         top: 50%
         transform: translateY(-50%)
         transition: .1s
-        width: 71vw
+        width: 60vw
         height: 0%
-        left: 18vw
+        left: 20vw
         overflow: hidden
         &-item
             display: flex
             align-items: start
             justify-content: space-between
             flex-direction: column
+            color: $text-color
             overflow: hidden
+            &_center-second
+                font-family: 'Gilroy-Regular'
+                font-size: 2vh
+                &-bold
+                    font-family: 'Gilroy-Bold'
+                    letter-spacing: -0.03em
             &_right
                 align-items: end
                 color: $second-color
+                font-family: 'Lato-Regular'
                 font-size: 1.7vh
+    &__question
+        font-family: 'Manus'
+        font-style: italic
+        font-weight: 100
+        font-size: 12px
+        line-height: 105%
+    &__feedback
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 18px
+        font-family: 'Gilroy-Black'
+        font-weight: bold
+        color: $text-color
+        &:hover + .menu-arrow
+            left: -5vw
+    // &__arrow
+    //     position: absolute
+    //     left: -7vw
+    //     top: 5vh
 .logo
     width: 1.7vw
     margin-bottom: 1vh
+    &-wrapper
