@@ -28,7 +28,7 @@ const scroll = () => {
       scrollDown.style.opacity = "0";
       scrollDown.style.top = "10vh";
       scrollDownCenter.style.opacity = "1";
-      scrollDownCenter.style.top = "-11vh";
+      scrollDownCenter.style.top = "-15vh";
     }
     if (scrollY > 0) {
       background.style.width = "97vw";
@@ -41,9 +41,9 @@ const scroll = () => {
       titleSmallWhite.style.transitionDelay = ".4s";
       titleSmallHead.style.transitionDelay = ".4s";
       scrollUp.style.opacity = "1";
-      scrollUp.style.top = "-1vh";
+      scrollUp.style.top = "-10vh";
       scrollDown.style.opacity = "1";
-      scrollDown.style.top = "-7vh";
+      scrollDown.style.top = "-10vh";
       scrollDownCenter.style.opacity = "0";
       scrollDownCenter.style.top = "10vh";
     }

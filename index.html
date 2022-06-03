@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="image/x-icon"
+      href="src/images/favicon.ico"
+      rel="shortcut icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,10 +38,11 @@
       <menu class="menu">
         <div class="menu-left">
           <div class="menu-items">
-            <span class="menu-item is-active">Обо мне.</span>
-            <span class="menu-item">Мои работы.</span>
-            <span class="menu-item">Обратная связь.</span>
-            <span class="menu-item">Полезные статьи.</span>
+            <span class="menu-item is-active" id="Главная">Главная.</span>
+            <span class="menu-item" id="Обо мне">Обо мне.</span>
+            <span class="menu-item" id="Мои работы">Мои работы.</span>
+            <span class="menu-item" id="Обратная связь">Обратная связь.</span>
+            <span class="menu-item" id="Полезные статьи">Полезные статьи.</span>
           </div>
           <!-- /.menu-items -->
           <div class="menu-contacts">
@@ -141,7 +147,7 @@
             </h3>
           </div>
         </figure>
-        <article class="description"></article>
+        <div class="for-scroll"></div>
       </section>
       <section class="paralax"></section>
       <section class="digital">
@@ -160,69 +166,83 @@
             />
           </svg>
           <span class="digital__title-text"
-            >Цифровая <br />стратегия
+            >Сотруд <br />ничество
             <span class="digital__title-point">.</span></span
           >
         </h2>
         <h3 class="digital__subtitle">
-          Разработка
+          Выполнение
           <span class="digital__subtitle_italic"
-            >вашей <br />
-            цифровой
+            >любого <br />
+            этапа
           </span>
-          стратегии
+          разработки
           <span class="digital__subtitle_point">.</span>
         </h3>
         <div class="digital__description">
-          Обзор вашего цифрового стратегия. Ключевой компонент вашей
-          трансформации, ваша цифровая стратегия требует особого внимания. Мы
-          предоставляем вам необходимую поддержку на протяжении всего проекта.
-          Благодаря регулярным семинарам, мозговым штурмам и обмену идеями мы
-          помогаем превратить вашу первоначальную идею в передовое цифровое
-          решение.
+          Я всегда рад партнерству и сотрудничеству с другими разработчиками или
+          веб-студиями, связанными с созданием, раскруткой и продвижением сайтов
+          и веб-приложений. Приглашаю к сотрудничеству всех, кто заинтересован
+          создавать качественные сайты и веб-приложения. Готов к обсуждению
+          любых производственных и коммерческих вопросов, чтобы в дальнейшем
+          стать надежным партнером по воплощению идей и задач в вопросах
+          веб-индустрии.
         </div>
-        <a href="/404.html" class="digital__question"
-          >Понравились мои работы?</a
-        >
         <figure class="digital__opportunity">
           <div class="digital__opportunity-block">
-            <h4 class="digital__opportunity-title">Дизайн</h4>
+            <h4 class="digital__opportunity-title">Этапы разработки</h4>
             <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Составление ТЗ</li>
               <li class="digital__opportunity-item">Прототипирование</li>
-              <li class="digital__opportunity-item">Разработка макета</li>
-              <li class="digital__opportunity-item">Макеты для адаптива</li>
-              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+              <li class="digital__opportunity-item">Разработка дизайна</li>
+              <li class="digital__opportunity-item">Верстка макета</li>
+              <li class="digital__opportunity-item">Размещение в сети</li>
+              <li class="digital__opportunity-item">Доработка функционала</li>
+              <li class="digital__opportunity-item">Администрирование</li>
             </ul>
           </div>
           <div class="digital__opportunity-block">
-            <h4 class="digital__opportunity-title">Разработка</h4>
+            <h4 class="digital__opportunity-title">Дизайн</h4>
             <ul class="digital__opportunity-items">
-              <li class="digital__opportunity-item">Верстка</li>
-              <li class="digital__opportunity-item">Адаптив для устройств</li>
+              <li class="digital__opportunity-item">Дизайн-макет</li>
+              <li class="digital__opportunity-item">Макет для устройств</li>
               <li class="digital__opportunity-item">Интерактивный дизайн</li>
-              <li class="digital__opportunity-item">Анимация</li>
-              <li class="digital__opportunity-item">Формы обратной связи</li>
+              <li class="digital__opportunity-item">
+                Разработка графических элементов
+              </li>
+              <li class="digital__opportunity-item">Подбор цвета</li>
+              <li class="digital__opportunity-item">Подбор шрифтов</li>
+            </ul>
+          </div>
+          <div class="digital__opportunity-block">
+            <h4 class="digital__opportunity-title">Верстка</h4>
+            <ul class="digital__opportunity-items">
+              <li class="digital__opportunity-item">Верстка макета</li>
+              <li class="digital__opportunity-item">BEM-методология</li>
+              <li class="digital__opportunity-item">
+                Верстка отдельных блоков
+              </li>
+              <li class="digital__opportunity-item">
+                Внесение изменений в верстку
+              </li>
+              <li class="digital__opportunity-item">Адаптив для устройств</li>
+              <li class="digital__opportunity-item">“Резиновая” верстка</li>
             </ul>
           </div>
           <div class="digital__opportunity-block">
             <h4 class="digital__opportunity-title">Взаимодействие</h4>
             <ul class="digital__opportunity-items">
-              <li class="digital__opportunity-item">Составление ТЗ</li>
-              <li class="digital__opportunity-item">Прототипирование</li>
-              <li class="digital__opportunity-item">Разработка макета</li>
-              <li class="digital__opportunity-item">Сопровождение в Trello</li>
-            </ul>
-          </div>
-          <div class="digital__opportunity-block">
-            <h4 class="digital__opportunity-title">Дизайн</h4>
-            <ul class="digital__opportunity-items">
-              <li class="digital__opportunity-item">Прототипирование</li>
-              <li class="digital__opportunity-item">Создание макета</li>
-              <li class="digital__opportunity-item">Макеты для адаптива</li>
-              <li class="digital__opportunity-item">Подбор цвета и шрифтов</li>
+              <li class="digital__opportunity-item">
+                Сопровождение разработки в Trello
+              </li>
+              <li class="digital__opportunity-item">
+                Промежуточный результат в контрольных точках
+              </li>
+              <li class="digital__opportunity-item">Внесение до 5 правок</li>
             </ul>
           </div>
         </figure>
+        <div class="for-scroll"></div>
       </section>
       <section class="ideas">
         <h2 class="ideas__title">
@@ -253,15 +273,18 @@
           <h4 class="ideas__description-title">У вас есть идеи?</h4>
           <p class="ideas__description-text">
             Думаете о новом лендинге для своей организации, нужна платформа для
-            интернет-магазина или подумывайте завести собственный блог? Давайте
-            <span class="ideas__description-text_accent">
-              реализуем ваши идеи вместе.</span
-            >
+            интернет-магазина или подумываете завести свой блог? Достаточно
+            озвучить свои идеи, цели, пожелания или примеры понравившихся сайтов
+            и приложений.
           </p>
           <p class="ideas__description-text">
-            У вас есть действующий проект, который вы хотите освежить? Напиишите
-            мне, и вместе мы превратим вашу яркую идею в реальный проект,
-            который поможет вашему бизнесу стать более прибыльным.
+            На основании этого я предоставлю варианты исполнения, основываясь на
+            своём опыте. Я учту все ваши пожелания по структуре, дизайну и
+            содержанию и разработаю современный, эффективный и красивый продукт
+            для вашего бизнеса. Давайте
+            <span class="ideas__description-text_accent">
+              реализуем ваши идеи вместе!</span
+            >
           </p>
         </article>
       </section>
@@ -312,12 +335,11 @@
       </div>
       <!-- /.footer__wrapper -->
       <button class="scroll-down">
-        Крути
         <svg
-          class="scroll-down__arrow"
-          width="8"
-          height="100"
-          viewBox="0 0 11 99"
+          class="scroll-arrow"
+          width="10"
+          height="10"
+          viewBox="2 0 10 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -326,14 +348,14 @@
             fill="black"
           />
         </svg>
+        <span class="scroll-text">Крути</span>
       </button>
       <button class="scroll-down_center">
-        Крути
         <svg
-          class="scroll-down__arrow"
-          width="8"
-          height="100"
-          viewBox="0 0 11 99"
+          class="scroll-arrow"
+          width="10"
+          height="10"
+          viewBox="2 0 10 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -342,13 +364,14 @@
             fill="white"
           />
         </svg>
+        <span class="scroll-text scroll-text_center">Крути</span>
       </button>
       <button class="scroll-up">
         <svg
-          class="scroll-up__arrow"
-          width="8"
-          height="100"
-          viewBox="0 0 11 99"
+          class="scroll-arrow"
+          width="10"
+          height="10"
+          viewBox="2 0 10 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -357,7 +380,7 @@
             fill="black"
           />
         </svg>
-        Наверх
+        <span class="scroll-text">Наверх</span>
       </button>
     </footer>
   </body>

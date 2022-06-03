@@ -11,8 +11,7 @@ const footer = () => {
       scrollY >
       sectionWelcome.scrollHeight +
         sectionParalax.scrollHeight +
-        sectionDigital.scrollHeight +
-        5
+        sectionDigital.scrollHeight
     ) {
       footer.classList.add("footer_visible");
       footerWrapper.style.height = "100%";
@@ -20,6 +19,15 @@ const footer = () => {
       footer.classList.remove("footer_visible");
       footerWrapper.style.height = "0%";
     }
+    if (footer.classList.contains("footer_visible")) {
+      footer.style.height = "16vh";
+    } else {
+      footer.style.height = "7vh";
+    }
+    console.log(sectionWelcome.scrollHeight);
+    console.log(sectionParalax.scrollHeight);
+    console.log(sectionDigital.scrollHeight);
+    console.log(sectionIdeas.scrollHeight);
   });
 };
 

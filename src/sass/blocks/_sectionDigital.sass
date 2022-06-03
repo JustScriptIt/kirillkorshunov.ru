@@ -1,5 +1,4 @@
 .digital
-    height: 100vh
     position: relative
     &__title
         display: flex
@@ -17,12 +16,18 @@
         font-size: 6.65vh
         text-transform: uppercase
         z-index: 1
+        overflow: hidden
         &-line
             margin-bottom: 3vh
             width: 7vh
+            margin-left: -100%
+            transition: .8s
             &_qualities
                 stroke-width: 1.2vh
                 stroke: $accent-color
+        &-text
+            transform: translateY(200%)
+            transition: .8s
         &-point
             line-height: 8vh
             letter-spacing: -0.07em
@@ -85,8 +90,8 @@
             align-items: start
             justify-content: space-between
             flex-direction: column
-            padding: 10% 15%
-            height: 90%
+            padding: 10% 0 10% 15%
+            height: 100%
             width: 100%
             // border: 1px solid white
         &-title
@@ -101,7 +106,7 @@
             align-items: start
             justify-content: space-between
             flex-direction: column
-            height: 70%
+            height: 80%
         &-item
             list-style: none
             text-transform: uppercase
