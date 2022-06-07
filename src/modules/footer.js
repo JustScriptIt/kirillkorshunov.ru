@@ -20,7 +20,7 @@ const footer = () => {
       footerWrapper.style.height = "0%";
     }
     if (footer.classList.contains("footer_visible")) {
-      footer.style.height = "16vh";
+      footer.style.height = "12vh";
     } else {
       footer.removeAttribute("style");
     }

@@ -15,7 +15,7 @@ const menu = () => {
     if (hamburger.classList.contains("is-active")) {
       menu.style.width = "94vw";
       header.style = "height: 12vh; padding: 6vh 7vw 0 17vw";
-      footer.style.height = "12vh";
+      footer.classList.remove("footer_visible");
       footerWrapper.style.height = "0%";
       sidebarLeft.style.width = "7vw";
       sidebarRight.style.width = "7vw";
@@ -29,8 +29,8 @@ const menu = () => {
       sidebarLeft.removeAttribute("style");
       sidebarRight.removeAttribute("style");
       hamburger.removeAttribute("style");
-      footer.removeAttribute("style");
-      footerWrapper.removeAttribute("style");
+      footer.classList.add("footer_visible");
+      footerWrapper.style.height = "100%";
       document.body.style.overflow = "auto";
     }
   });
