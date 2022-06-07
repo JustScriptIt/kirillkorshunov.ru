@@ -14,21 +14,17 @@ const scroll = () => {
 
   document.addEventListener("scroll", () => {
     if (scrollY == 0) {
-      background.style.width = "50vw";
-      title.style.left = "50vw";
-      title.style.width = "68vh";
-      titleSmall.style.transform = "translateY(150%)";
-      titleSmallWhite.style.transform = "translateY(200%)";
-      titleSmallHead.style.transform = "translateX(-150%)";
+      background.removeAttribute("style");
+      title.removeAttribute("style");
+      titleSmall.removeAttribute("style");
+      titleSmallWhite.removeAttribute("style");
+      titleSmallHead.removeAttribute("style");
       titleSmall.style.transitionDelay = "0s";
       titleSmallWhite.style.transitionDelay = "0s";
       titleSmallHead.style.transitionDelay = "0s";
-      scrollUp.style.opacity = "0";
-      scrollUp.style.top = "10vh";
-      scrollDown.style.opacity = "0";
-      scrollDown.style.top = "10vh";
-      scrollDownCenter.style.opacity = "1";
-      scrollDownCenter.style.top = "-15vh";
+      scrollUp.removeAttribute("style");
+      scrollDown.removeAttribute("style");
+      scrollDownCenter.removeAttribute("style");
     }
     if (scrollY > 0) {
       background.style.width = "97vw";
@@ -46,18 +42,18 @@ const scroll = () => {
       scrollDown.style.top = "-10vh";
       scrollDownCenter.style.opacity = "0";
       scrollDownCenter.style.top = "10vh";
-    }
-    if (
-      scrollY >
-      sectionWelcome.scrollHeight +
-        sectionParalax.scrollHeight +
-        sectionDigital.scrollHeight
-    ) {
-      scrollDown.style.transition = ".1s";
-      scrollDown.style.opacity = "0";
-    } else {
-      scrollDown.style.transition = ".8s";
-      scrollDown.style.opacity = "1";
+      if (
+        scrollY >
+        sectionWelcome.scrollHeight +
+          sectionParalax.scrollHeight +
+          sectionDigital.scrollHeight
+      ) {
+        scrollDown.style.transition = ".1s";
+        scrollDown.style.opacity = "0";
+      } else {
+        scrollDown.style.transition = ".8s";
+        scrollDown.style.opacity = "1";
+      }
     }
   });
 

@@ -22,12 +22,8 @@ const footer = () => {
     if (footer.classList.contains("footer_visible")) {
       footer.style.height = "16vh";
     } else {
-      footer.style.height = "7vh";
+      footer.removeAttribute("style");
     }
-    console.log(sectionWelcome.scrollHeight);
-    console.log(sectionParalax.scrollHeight);
-    console.log(sectionDigital.scrollHeight);
-    console.log(sectionIdeas.scrollHeight);
   });
 };
 

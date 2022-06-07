@@ -1,0 +1,69 @@
+@media screen and ( max-width: 401px )
+    .digital
+        &__title
+            width: 80vw
+            line-height: 4vh
+            font-size: 6vh
+            &-line
+                margin-bottom: 1vh
+                width: 5vh
+                &_qualities
+                    stroke-width: .8vh
+            &-text
+            &-point
+                line-height: 6vh
+                font-size: 7vh
+        &__subtitle
+            top: 32vh
+            width: 80vw
+            line-height: 2.5vh
+            font-size: 3vh
+            &_point
+                line-height: 3vh
+                font-size: 6vh
+        &__description
+            top: 40vh
+            width: 80vw
+            line-height: 2.5vh
+            font-size: 1.8vh
+        &__opportunity
+            position: absolute
+            // display: grid
+            display: none
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            top: 20vh
+            right: 4vw
+            width: 41vw
+            height: 64.8vh
+            background: #292D2D
+            &-block
+                display: flex
+                align-items: start
+                justify-content: space-between
+                flex-direction: column
+                padding: 10% 0 10% 15%
+                height: 100%
+                width: 100%
+                // border: 1px solid white
+            &-title
+                height: 15%
+                text-transform: uppercase
+                font-size: 2.5vh
+                font-family: 'GolosText'
+                font-weight: normal
+                color: white
+            &-items
+                display: flex
+                align-items: start
+                justify-content: space-between
+                flex-direction: column
+                height: 80%
+            &-item
+                list-style: none
+                text-transform: uppercase
+                font-size: 1.7vh
+                font-family: 'GolosText'
+                font-weight: normal
+                font-style: italic
+                color: grey
